@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "WindowsAzure.SignalRScaleOutDemo", "WindowsAzure.SignalRScaleOutDemo\WindowsAzure.SignalRScaleOutDemo.ccproj", "{12C60672-E34A-4BAE-94A2-711AE13FCF8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsAzure.SignalRScaleOutDemo.Web", "WindowsAzure.SignalRScaleOutDemo.Web\WindowsAzure.SignalRScaleOutDemo.Web.csproj", "{62EF7537-362B-4FA9-A5D9-FC2ADBF1830E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12C60672-E34A-4BAE-94A2-711AE13FCF8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12C60672-E34A-4BAE-94A2-711AE13FCF8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12C60672-E34A-4BAE-94A2-711AE13FCF8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12C60672-E34A-4BAE-94A2-711AE13FCF8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62EF7537-362B-4FA9-A5D9-FC2ADBF1830E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62EF7537-362B-4FA9-A5D9-FC2ADBF1830E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62EF7537-362B-4FA9-A5D9-FC2ADBF1830E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62EF7537-362B-4FA9-A5D9-FC2ADBF1830E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

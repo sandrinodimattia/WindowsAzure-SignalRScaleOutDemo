@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="WindowsAzure.SignalRScaleOutDemo" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="3" osVersion="*" schemaVersion="2013-03.2.0">
+  <Role name="WindowsAzure.SignalRScaleOutDemo.Web">
+    <Instances count="4" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="ServiceBusConnectionString" value="Endpoint=sb://mychatapp.servicebus.windows.net/;SharedSecretIssuer=owner;SharedSecretValue=something" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>

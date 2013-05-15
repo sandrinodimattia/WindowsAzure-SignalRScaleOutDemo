@@ -1,0 +1,184 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.AspNet.SignalR.ServiceBus</name>
+    </assembly>
+    <members>
+        <member name="M:Microsoft.AspNet.SignalR.DependencyResolverExtensions.UseServiceBus(Microsoft.AspNet.SignalR.IDependencyResolver,System.String,System.String)">
+            <summary>
+            Use Windows Azure Service Bus as the messaging backplane for scaling out of ASP.NET SignalR applications in a web farm.
+            </summary>
+            <param name="resolver">The dependency resolver.</param>
+            <param name="connectionString">The Service Bus connection string to use.</param>
+            <param name="topicPrefix">The topic prefix to use. Typically represents the app name. This must be consistent between all nodes in the web farm.</param>
+            <returns>The dependency resolver</returns>
+            <remarks>Note: Only Windows Azure Service Bus is supported. Service Bus for Windows Server (on-premise) is not supported.</remarks>
+        </member>
+        <member name="M:Microsoft.AspNet.SignalR.DependencyResolverExtensions.UseServiceBus(Microsoft.AspNet.SignalR.IDependencyResolver,Microsoft.AspNet.SignalR.ServiceBusScaleoutConfiguration)">
+            <summary>
+            Use Windows Azure Service Bus as the messaging backplane for scaling out of ASP.NET SignalR applications in a web farm.
+            </summary>
+            <param name="resolver">The dependency resolver.</param>
+            <param name="configuration">The Service Bus scale-out configuration options.</param>
+            <returns>The dependency resolver</returns>
+            <remarks>Note: Only Windows Azure Service Bus is supported. Service Bus for Windows Server (on-premise) is not supported.</remarks>
+        </member>
+        <member name="T:Microsoft.AspNet.SignalR.ServiceBus.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNet.SignalR.ServiceBus.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNet.SignalR.ServiceBus.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNet.SignalR.ServiceBus.Resources.Error_ArgumentMustBeNonNegativeTimeoutVal">
+            <summary>
+              Looks up a localized string similar to Argument {0} must be a non-negative timeout value. The provided value was {1}..
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNet.SignalR.ServiceBus.Resources.Error_ArgumentMustBePositiveTimeoutVal">
+            <summary>
+              Looks up a localized string similar to Argument {0} must be a positive timeout value. The provided value was {1}.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNet.SignalR.ServiceBus.Resources.Error_AsyncCallbackThrewException">
+            <summary>
+              Looks up a localized string similar to An AsyncCallback threw an exception..
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNet.SignalR.ServiceBus.Resources.Error_CleanupCalledOnAnOverlappedThatsInFlight">
+            <summary>
+              Looks up a localized string similar to Cleanup called on an overlapped that is in-flight..
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNet.SignalR.ServiceBus.Resources.Error_DataSizeSmallerThanNegOne">
+            <summary>
+              Looks up a localized string similar to Data size is smaller than -1.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNet.SignalR.ServiceBus.Resources.Error_DataSizeTooBig">
+            <summary>
+              Looks up a localized string similar to Data size is too big..
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNet.SignalR.ServiceBus.Resources.Error_DequeueOperationTimedOut">
+            <summary>
+              Looks up a localized string similar to A Dequeue operation timed out after {0}. The time allotted to this operation may have been a portion of a longer timeout..
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNet.SignalR.ServiceBus.Resources.Error_EndCannotBeCalledTwiceOnSameAsyncResult">
+            <summary>
+              Looks up a localized string similar to End cannot be called twice on the same AsyncResult..
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNet.SignalR.ServiceBus.Resources.Error_HeadTailOverflow">
+            <summary>
+              Looks up a localized string similar to Head/Tail overflow!.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNet.SignalR.ServiceBus.Resources.Error_IncorrectIAsyncResultProvidedToEndMethod">
+            <summary>
+              Looks up a localized string similar to An incorrect IAsyncResult was provided to an &apos;End&apos; method. The IAsyncResult object passed to &apos;End&apos; must be the one returned from the matching &apos;Begin&apos; or passed to the callback provided to &apos;Begin&apos;..
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNet.SignalR.ServiceBus.Resources.Error_IncorrectImplOfIAsyncResult">
+            <summary>
+              Looks up a localized string similar to An incorrect implementation of the IAsyncResult interface. {0}.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNet.SignalR.ServiceBus.Resources.Error_IncorrectImplOfIAsyncResultReturningBadValues">
+             <summary>
+               Looks up a localized string similar to An incorrect implementation of the IAsyncResult interface ({0}) may be returning incorrect values 
+            from the CompletedSynchronously property or calling the AsyncCallback more than once..
+             </summary>
+        </member>
+        <member name="P:Microsoft.AspNet.SignalR.ServiceBus.Resources.Error_IOThreadTimerCannotAcceptTimeSpanMaxVal">
+            <summary>
+              Looks up a localized string similar to IOThreadTimer cannot accept Timespan.MaxValue..
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNet.SignalR.ServiceBus.Resources.Error_LowPriorityHeadTailOverflow">
+            <summary>
+              Looks up a localized string similar to Low-priority Head/Tail overflow!.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNet.SignalR.ServiceBus.Resources.Error_MalformedDataStream">
+            <summary>
+              Looks up a localized string similar to Malformed data stream..
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNet.SignalR.ServiceBus.Resources.Error_MultipleOperationException">
+             <summary>
+               Looks up a localized string similar to The IAsyncResult implementation &apos;{0}&apos; tried to complete a single operation multiple times. 
+            This could be caused by an incorrect application IAsyncResult implementation or 
+            other extensibility code, such as an IAsyncResult that returns incorrect CompletedSynchronously 
+            values or invokes the AsyncCallback multiple times..
+             </summary>
+        </member>
+        <member name="P:Microsoft.AspNet.SignalR.ServiceBus.Resources.Error_OnlyOnceChecOrSyncPerOperation">
+            <summary>
+              Looks up a localized string similar to Only call Check/SyncContinue once per async operation (once per PrepareAsyncCompletion)..
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNet.SignalR.ServiceBus.Resources.Error_SemaphoreCountAlreadyReachedZero">
+            <summary>
+              Looks up a localized string similar to Semaphore&apos;s count has already reached zero before this operation. Make sure Exit() is called only after successfully entered the semaphore.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNet.SignalR.ServiceBus.Resources.Error_UnableToResolveIncaseIndexOfRole">
+            <summary>
+              Looks up a localized string similar to Unable to resolve the instance index of this role. Make sure Microsoft.WindowsAzure.ServiceRuntime.dll is deployed with your application..
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNet.SignalR.ServiceBus.Resources.Error_ValueSuppliedMustBeBetween">
+            <summary>
+              Looks up a localized string similar to The value supplied must be between {0} and {1}..
+            </summary>
+        </member>
+        <member name="T:Microsoft.AspNet.SignalR.ServiceBus.ServiceBusMessageBus">
+            <summary>
+            Uses Windows Azure Service Bus topics to scale-out SignalR applications in web farms.
+            </summary>
+        </member>
+        <member name="T:Microsoft.AspNet.SignalR.ServiceBusScaleoutConfiguration">
+            <summary>
+            Settings for the Service Bus scale-out message bus implementation.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNet.SignalR.ServiceBusScaleoutConfiguration.ConnectionString">
+            <summary>
+            The Service Bus connection string to use.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNet.SignalR.ServiceBusScaleoutConfiguration.TopicPrefix">
+            <summary>
+            The topic prefix to use. Typically represents the app name.
+            This must be consistent between all nodes in the web farm.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNet.SignalR.ServiceBusScaleoutConfiguration.TopicCount">
+            <summary>
+            The number of topics to send messages over. Using more topics reduces contention and may increase throughput.
+            This must be consistent between all nodes in the web farm.
+            Defaults to 1.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNet.SignalR.ServiceBusScaleoutConfiguration.TimeToLive">
+            <summary>
+            Gets or sets the message’s time to live value. This is the duration after
+            which the message expires, starting from when the message is sent to the
+            Service Bus. Messages older than their TimeToLive value will expire and no
+            longer be retained in the message store. Subscribers will be unable to receive
+            expired messages.
+            </summary>
+        </member>
+    </members>
+</doc>
